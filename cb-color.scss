@@ -1,0 +1,54 @@
+/*!
+* Codebox Color UI v1.0 by Milad Abooali
+* Copyright 2012-2020 Codebox (http://codebox.ir).
+* Licensed under gpl-3.0
+*/
+
+// Color List
+$colors:
+  "darken"   "#1d1d1d",
+  "white"    "#ffffff",
+  "teal"     "#00aba9",
+  "magenta"  "#ff0097",
+  "lblue"    "#eff4ff",
+  "blue"     "#2d89ef",
+  "dblue"    "#2b5797",
+  "lpurple"  "#9f00a7",
+  "purple"   "#7e3878",
+  "dpurple"  "#603cba",
+  "lgreen"   "#99b433",
+  "green"    "#00a300",
+  "dgreen"   "#1e7145",
+  "yellow"   "#ffc40d",
+  "orange"   "#e3a21a",
+  "dorange"  "#da532c",
+  "red"      "#ee1111",
+  "dred"     "#b91d47";
+
+/* Main Colors Class */
+@each $name, $color in $colors {
+  .cb-#{$name} {color: $color;}
+  .cb-b-#{$name} {border-color: $color;}
+  .cb-bg-#{$name} {background-color: $color;}
+  .cb-out-#{$name} {outline-color: $color;}
+}
+
+/* Border Class */
+$sizes: 1,2,3,4,5;
+$sides: ("bt":"top","br":"right","bb":"bottom","bl":"left");
+$styles: ridge,inset,solid,dotted,dashed,double,groove,outset,hidden;
+
+@each $size in $sizes {
+  @each $style in $styles {
+    .cb-b-#{$size}-#{$style} {
+      border: #{$size}px #{$style};
+    }
+  }
+  @each $samt, $side in $sides {
+    @each $style in $styles {
+      .cb-#{$samt}-#{$size}-#{$style} {
+        border-#{$side}: #{$size}px #{$style};
+      }
+    }
+  }
+}
