@@ -1,0 +1,113 @@
+/*!
+* Grid @ Codebox UI v1.0 by Milad Abooali
+* Copyright 2012-2020 Codebox (http://ui.codebox.ir).
+* Licensed under gpl-3.0
+*/
+
+// Grid List
+    .container {
+        box-sizing: border-box;
+      background-color: #eaeaea;
+      min-width: 100%;
+      max-width: 100%;
+    }
+    .container.box {
+      border-left: 15vw solid rgba(255, 0, 0, 0);
+      border-right: 15vw solid rgba(255, 0, 0, 0);
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+      max-width: 980px;
+    }
+    .container.flex {
+      border-left: 4vw solid rgba(255, 0, 0, 0);
+      border-right: 4vw solid rgba(255, 0, 0, 0);
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+      max-width: 1750px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .rowc {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+    [class^="col-"],
+    .col {
+      text-align: center;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 1;
+      background-color: #efefef;
+      border: 1px solid #dedede;
+      padding: 10px;
+    }
+    .col-t-1,
+    .col-t-2,
+    .col-t-3,
+    .col-t-4,
+    .col-t-5,
+    .col-t-6,
+    .col-m-1,
+    .col-m-2,
+    .col-m-3,
+    .col-m-4,
+    .col-m-5,
+    .col-m-6
+     {
+      width: auto;
+      min-width: 0!important;
+      color:blue;
+    }
+    .col-d-1 {max-width: calc(100% / 12);}
+    .col-d-2 {max-width: calc(100% / 12 * 2);}
+    .col-d-3 {max-width: calc(100% / 12 * 3);}
+    .col-d-4 {max-width: calc(100% / 12 * 4);}
+    .col-d-5 {max-width: calc(100% / 12 * 5);}
+    .col-d-6 {max-width: calc(100% / 2);}
+
+    /* Desktop */
+    @media (min-device-width: 980px) {
+
+    }
+
+    /* Tablet */
+    @media (min-device-width : 600px) and (max-device-width : 980px) {
+      .container {overflow: auto;}
+      [class^="col-d"],
+      .col {
+        min-width: 100%;
+        width: 100%;
+        margin: 10px 0;
+      }
+      .col-t-1 {max-width: calc(100% / 12);}
+      .col-t-2 {max-width: calc(100% / 12 * 2);}
+      .col-t-3 {max-width: calc(100% / 12 * 3);}
+      .col-t-4 {max-width: calc(100% / 12 * 4);}
+      .col-t-5 {max-width: calc(100% / 12 * 5);}
+      .col-t-6 {max-width: calc(100% / 2);}
+    }
+
+    /* Phone */
+    @media (max-device-width: 600px) {
+      .container {overflow: auto;}
+      [class^="col-d"],
+      [class^="col-t"],
+       .col {
+        min-width: 100%;
+        width: 100%;
+        margin: 10px 0;
+      }
+      .col-m-1 {max-width: calc(100% / 12);}
+      .col-m-2 {max-width: calc(100% / 12 * 2);}
+      .col-m-3 {max-width: calc(100% / 12 * 3);}
+      .col-m-4 {max-width: calc(100% / 12 * 4);}
+      .col-m-5 {max-width: calc(100% / 12 * 5);}
+      .col-m-6 {max-width: calc(100% / 2);}
+    }
