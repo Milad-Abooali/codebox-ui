@@ -1,0 +1,40 @@
+/*!
+* Fonts @ Codebox UI v1.0 by Milad Abooali
+* Copyright 2012-2020 Codebox (http://ui.codebox.ir).
+* Licensed under gpl-3.0
+*/
+
+// Fonts Persian
+
+@font-face{
+  font-family:'codeboxFA';
+  src:
+    url('../font/codebox/fa/codeboxFA.eot') format('eot');
+  src:
+      url('../font/codebox/fa/codeboxFA.eot?#iefix') format('embedded-opentype'),
+      url('../font/codebox/fa/codeboxFA.ttf') format('truetype'),
+      url('../font/codebox/fa/codeboxFA.otf') format('otf'),
+      url('../font/codebox/fa/codeboxFA.woff') format('woff'),
+      url('../font/codebox/fa/codeboxFA.woff2') format('woff2');
+}
+
+// Fonts English
+
+@font-face{
+  font-family:'codeboxEN';
+  src:
+    url('../font/codebox/en/codeboxEN.eot') format('eot');
+  src:
+    url('../font/codebox/en/codeboxEN.eot?#iefix') format('embedded-opentype'),
+    url('../font/codebox/en/codeboxEN.otf') format('otf'),
+    url('../font/codebox/en/codeboxEN.ttf') format('truetype'),
+    url('../font/codebox/en/codeboxEN.woff') format('woff'),
+    url('../font/codebox/en/codeboxEN.woff2') format('woff2');
+}
+
+// Fonts Persian
+
+body {
+    font-family:'codeboxEN',codeboxFA,tahoma,serif;
+    font-size:13px;
+}
