@@ -7,20 +7,15 @@
 // Grid
     .container {
       box-sizing: border-box;
-      background-color: #eaeaea;
       min-width: 100%;
       max-width: 100%;
     }
     .container.box {
-      border-left: 15vw solid rgba(255, 0, 0, 0);
-      border-right: 15vw solid rgba(255, 0, 0, 0);
       -webkit-background-clip: padding-box;
       background-clip: padding-box;
       max-width: 980px;
     }
     .container.flex {
-      border-left: 4vw solid rgba(255, 0, 0, 0);
-      border-right: 4vw solid rgba(255, 0, 0, 0);
       -webkit-background-clip: padding-box;
       background-clip: padding-box;
       max-width: 1750px;
